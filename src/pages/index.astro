@@ -2,25 +2,31 @@
 import Layout from "../layouts/Layout.astro";
 import LandingHeader from "../components/LandingHeader.astro";
 import HeroSection from "../components/HeroSection.astro";
+import ModelY from "../components/ModelY.astro";
+import ModelS from "../components/ModelS.astro";
+import Model3 from "../components/Model3.astro";
+import PowerWall from "../components/PowerWall.astro";
 ---
 
 <Layout title="Tesla - El coche de mis sueños? nah">
 	<LandingHeader />
-	<main class="relative w-full h-screen overflow-auto snap-y snap-mandatory">
+	<main
+		class="relative w-full h-screen overflow-auto snap-y snap-mandatory scroll-smooth"
+	>
 		<div class="snap-center">
 			<HeroSection />
 		</div>
 		<div class="snap-center">
-			<HeroSection />
+			<ModelY />
 		</div>
 		<div class="snap-center">
-			<HeroSection />
+			<Model3 />
 		</div>
 		<div class="snap-center">
-			<HeroSection />
+			<ModelS />
 		</div>
 		<div class="snap-center">
-			<HeroSection />
+			<PowerWall />
 		</div>
 	</main>
 </Layout>
